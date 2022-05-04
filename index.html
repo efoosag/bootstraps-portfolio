@@ -10,10 +10,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./style.css" />
     <title>Bootstrap Portfolio</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="wrapper container-fluid">
       <navbar class="px-5 d-flex justify-content-between">
         <a href="#" class="col-4 nav-link fw-bolder">My Logo</a>
         <nav>
@@ -35,7 +36,7 @@
           </ul>
         </nav>
       </navbar>
-      <section class="container-fluid mt-5 bg-white">
+      <section class="main container-fluid mt-5 bg-white">
         <h1 class="container mt-5 px-5">I’m Mariane <br />Glad to see you!</h1>
         <p class="container px-5">
           I’m a software developer! I can help you build a product , feature or
@@ -75,8 +76,11 @@
         </ul>
       </section>
     </div>
-    <section class="container-fluid card my-5 bg-secondary">
-      <div class="container p-3 m-5 row g-0 bg-white rounded">
+    <section
+      class="container-fluid card my-5"
+      style="background-color: #e5e5e5; border: 0"
+    >
+      <div class="container p-3 ms-5 row g-0 bg-white rounded">
         <div class="col-md-6">
           <img
             src="./images/pic_1.png"
@@ -357,72 +361,68 @@
         </div>
       </div>
     </section>
-    <section class="container d-flex justify-content-center" id="contact">
-      <div class="pt-5">
-        <form action="https://formspree.io/f/mvolvkeo" method="post">
-          <ul class="d-flex flex-column align-items-center list-unstyled">
-            <li><h2 class="px-auto text-center">Contact me</h2></li>
-            <li class="d-flex justify-content-center">
-              <p class="px-auto text-center" style="width: 50%">
-                If you have an application you are interested in developing, a
-                feature that you need built or a project that needs coding. I’d
-                love to help with it
-              </p>
-            </li>
-            <li>
-              <div>
-                <label class="form-label" for="name">Name:</label>
+    <section class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form action="https://formspree.io/f/mvolvkeo" method="post">
+            <ul class="list-unstyled">
+              <li><h2 class="px-auto text-center">Contact me</h2></li>
+              <li class="d-flex justify-content-center">
+                <p class="px-auto text-center" style="width: 50%">
+                  If you have an application you are interested in developing, a
+                  feature that you need built or a project that needs coding.
+                  I’d love to help with it
+                </p>
+              </li>
+              <li>
+                <div>
+                  <label class="form-label" for="name">Name:</label>
+                  <input
+                    type="text"
+                    class="form-control px-auto"
+                    id="name"
+                    maxlength="30"
+                    placeholder="Yeremias"
+                    required
+                  />
+                </div>
+              </li>
+              <li>
+                <label class="form-label" for="email">Email:</label>
                 <input
-                  type="text"
-                  class="form-control px-auto"
-                  style="width: 200%"
-                  id="name"
-                  maxlength="30"
-                  placeholder="Yeremias"
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="natajayanj14@gmail.com"
                   required
                 />
-              </div>
-            </li>
-            <li class="form-item">
-              <label class="form-label" for="email">Email:</label>
-              <input
-                type="email"
-                class="form-control"
-                style="width: 40%"
-                id="email"
-                placeholder="natajayanj14@gmail.com"
-                required
-              />
-            </li>
-            <li class="form-item">
-              <label class="form-label" for="msg">Message:</label>
-              <textarea
-                name="msg"
-                id="msg"
-                cols="30"
-                rows="10"
-                class="form-control"
-                style="width: 40%"
-                maxlength="500"
-                required
-              >
-    Your message</textarea
-              >
-            </li>
-            <li>
-              <button
-                type="submit"
-                class="btn btn-outline-primary d-block mt-3 ms-5 align-items-center"
-              >
-                Get it Touch
-              </button>
-            </li>
-            <li class="speaker">
-              <span class="speaker-item"></span>
-            </li>
-          </ul>
-          <div class="contact-mobile-shape"></div>
-        </form>
+              </li>
+              <li>
+                <label class="form-label" for="msg">Message:</label>
+                <textarea
+                  name="msg"
+                  id="msg"
+                  cols="30"
+                  rows="10"
+                  class="form-control"
+                  maxlength="500"
+                  required
+                >
+          Your message</textarea
+                >
+              </li>
+              <li>
+                <button type="submit" class="btn btn-outline-primary mt-3 ms-5">
+                  Get it Touch
+                </button>
+              </li>
+              <li class="speaker">
+                <span class="speaker-item"></span>
+              </li>
+            </ul>
+            <div class="contact-mobile-shape"></div>
+          </form>
+        </div>
       </div>
     </section>
     <script
